@@ -2,7 +2,8 @@ import Template from '../Template';
 import html from './app.html';
 import './app.css';
 import Header from '../header/Header';
-import Footer from '../footer/Footer.js';
+import Home from '../home/Home';
+// import Footer from '../footer/Footer.js';
 
 import { removeChildren } from '../dom';
 
@@ -10,7 +11,7 @@ const template = new Template(html);
 
 // Hash Navigation
 const map = new Map();
-// map.set('#pie', Pie);
+map.set('#home', Home);
 // map.set('#resources', Resources);
 
 export default class App {
@@ -32,7 +33,7 @@ export default class App {
     const dom = template.clone();   
       
     dom.querySelector('header').appendChild(new Header().render());
-    dom.querySelector('footer').appendChild(new Footer().render());
+    // dom.querySelector('footer').appendChild(new Footer().render());
     this.main = dom.querySelector('main');
     this.setPage();
   
