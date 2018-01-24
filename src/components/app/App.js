@@ -4,15 +4,15 @@ import './app.css';
 import { removeChildren } from '../dom';
 import Header from './Header';
 import History from '../pages/history/History';
-// import Saftey from '../pages/saftey/Saftey';
-// import Improving from '../pages/improving/Improving';
+import Resources from '../pages/resources/Resources';
+import Sample from '../pages/sample/Sample';
 
 const template = new Template(html);
 
 const map = new Map();
 map.set('#history', History);
-// map.set('#saftey', Saftey);
-// map.set('#improving', Improving);
+map.set('#resources', Resources);
+map.set('#sample', Sample);
 
 export default class App {
 
