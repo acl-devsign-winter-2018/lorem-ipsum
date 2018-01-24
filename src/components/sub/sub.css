@@ -5,5 +5,20 @@
   margin: 0 auto;
   display: flex;
   align-items: center;
-  justify-content: center;
+  justify-content: flex-start;
+}
+
+.select {
+  font-weight: 600;
+}
+
+form {
+  select {
+    font-size: 0.9rem;
+    background-color: $white;
+    border: 5px solid $gray;
+    height: 3rem;
+    width: 17rem;
+    border-radius: 0px;
+  }
 }

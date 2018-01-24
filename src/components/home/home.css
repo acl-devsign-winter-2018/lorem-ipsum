@@ -37,6 +37,34 @@
   font-size: 5rem;
 }
 
+/* --------- Google Fonts -------- */
+.trirong-work-sans {
+  @import url('https://fonts.googleapis.com/css?family=Work+Sans:400,400i,700|Trirong:700');
+  h1, h2, h3, h4 {font-family: 'Trirong', serif;}
+  p {font-family: 'Work Sans', sans-serif;}
+}
+.cormorant-garamond-proza-libre {
+  @import url('https://fonts.googleapis.com/css?family=Cormorant+Garamond:700|Proza+Libre:400,400i,700');
+  h1, h2, h3, h4 {font-family: 'Cormorant Garamond', serif;}
+  p {font-family: 'Proza Libre', sans-serif;}
+}
+.libre-franklin-libre-baskerville {
+  @import url('https://fonts.googleapis.com/css?family=Libre+Baskerville:400,400i,700|Libre+Franklin:700');
+  h1, h2, h3, h4 {font-family: 'Libre Franklin', sans-serif;}
+  p {font-family: 'Libre Baskerville', serif;}
+}
+.work-sans-taviraj {
+  @import url('https://fonts.googleapis.com/css?family=Taviraj:400,400i,700|Work+Sans:700');
+  h1, h2, h3, h4 {font-family: 'Work Sans', sans-serif;}
+  p {font-family: 'Taviraj', serif;}
+}
+.eczar-gentium-basic {
+  @import url('https://fonts.googleapis.com/css?family=Eczar:700|Gentium+Basic:400,400i,700');
+  h1, h2, h3, h4 {font-family: 'Eczar', serif;}
+  p {font-family: 'Gentium Basic', serif;}
+}
+
+
 /*  -------- Media Queries ------- */
 
 /* Mobile */

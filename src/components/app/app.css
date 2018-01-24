@@ -4,6 +4,12 @@
     grid-area: header;
 }
 
+.sub {
+    grid-area: sub;
+    background-color: rgb(253, 239, 239);
+    padding: 2rem 0;
+}
+
 .content {
     grid-area: content;
 }
@@ -17,6 +23,7 @@
     display: grid;
     grid-template-areas:
         "header"
+        "sub"
         "content"
         "footer";
     grid-template: auto 1fr auto;

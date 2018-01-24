@@ -31,15 +31,26 @@ export default class App {
     this.main.appendChild(component.render());
   }
 
+  updateStyle(newClass, getTarget) {
+    const newClassValue = newClass.options[newClass.selectedIndex].value;
+    getTarget.className = newClassValue;
+  }
+
   render() {
     const dom = template.clone();   
       
     dom.querySelector('header').appendChild(new Header().render());
     dom.querySelector('.sub').appendChild(new Sub().render());
     dom.querySelector('footer').appendChild(new Footer().render());
+
     this.main = dom.querySelector('main');
     this.setPage();
   
+    this.fontPair = dom.getElementById('font-pair');
+    dom.getElementById('font-pair-select').onchange = () => {
+      this.updateStyle(event.target, this.fontPair);
+    };
+
     return dom;
   }
 }
