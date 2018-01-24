@@ -16,7 +16,7 @@ form {
   select {
     font-size: 0.9rem;
     background-color: $white;
-    border: 5px solid $gray;
+    border: 5px solid darkgray;
     height: 3rem;
     width: 17rem;
     border-radius: 0px;

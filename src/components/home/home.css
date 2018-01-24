@@ -34,7 +34,6 @@
 
 .end {
   margin: 4rem 0;
-  font-size: 5rem;
 }
 
 /* --------- Google Fonts -------- */
@@ -43,25 +42,23 @@
   h1, h2, h3, h4 {font-family: 'Trirong', serif;}
   p {font-family: 'Work Sans', sans-serif;}
 }
-.cormorant-garamond-proza-libre {
-  @import url('https://fonts.googleapis.com/css?family=Cormorant+Garamond:700|Proza+Libre:400,400i,700');
-  h1, h2, h3, h4 {font-family: 'Cormorant Garamond', serif;}
-  p {font-family: 'Proza Libre', sans-serif;}
+
+.signika-open-sans {
+  @import url('https://fonts.googleapis.com/css?family=Signika:400,600,700|Open+Sans:400');
+  h1, h2, h3, h4 {font-family: 'Signika', sans-serif;}
+  p {font-family: 'Open Sans', sans-serif;}
 }
-.libre-franklin-libre-baskerville {
-  @import url('https://fonts.googleapis.com/css?family=Libre+Baskerville:400,400i,700|Libre+Franklin:700');
-  h1, h2, h3, h4 {font-family: 'Libre Franklin', sans-serif;}
-  p {font-family: 'Libre Baskerville', serif;}
+
+.playfair-display-rubik {
+  @import url('https://fonts.googleapis.com/css?family=Playfair+Display:400,400i,700|Rubik:400');
+  h1, h2, h3, h4 {font-family: 'Playfair Display', serif;}
+  p {font-family: 'Rubik', sans-serif;}
 }
-.work-sans-taviraj {
-  @import url('https://fonts.googleapis.com/css?family=Taviraj:400,400i,700|Work+Sans:700');
-  h1, h2, h3, h4 {font-family: 'Work Sans', sans-serif;}
-  p {font-family: 'Taviraj', serif;}
-}
-.eczar-gentium-basic {
-  @import url('https://fonts.googleapis.com/css?family=Eczar:700|Gentium+Basic:400,400i,700');
-  h1, h2, h3, h4 {font-family: 'Eczar', serif;}
-  p {font-family: 'Gentium Basic', serif;}
+
+.oxygen-source-sans {
+  @import url('https://fonts.googleapis.com/css?family=Oxygen:400,700|Source+Sans+Pro:400');
+  h1, h2, h3, h4 {font-family: 'Oxygen', serif;}
+  p {font-family: 'Source Sans Pro', serif;}
 }
 
 

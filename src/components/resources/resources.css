@@ -1,1 +1,74 @@
 @import '../variables.css';
+
+
+.rcolumn {
+  display: flex;
+  div {
+    padding: 0 1.5rem 0 0;
+    max-width: 48%;
+  }
+}
+
+.r-top {
+  margin: 2rem 0 1rem;
+}
+
+.b-top {
+  margin: 2rem 0 1rem;
+  color: white;
+}
+
+.number {
+  color: $accent;
+  font-weight: 700;
+}
+
+.rlist {
+  list-style-type: none;  
+  li {
+    padding: 1rem 0;
+    font-size: 1.7rem;
+  }
+}
+
+.rh4 {
+  transition: 0.3s ease all;
+  border-bottom: 4px solid $white;
+  padding: 0 0 0.3rem;
+  &:hover {
+    border-bottom: 4px solid $accent;
+  }
+}
+
+
+
+
+/*  -------- Media Queries ------- */
+
+/* Mobile */
+@media only screen and (min-width: 320px) and (max-width: 480px) {
+  .b-top {
+    display: none;
+  }
+
+  .rcolumn {
+    flex-direction: column;
+    div {
+      max-width: 100%;
+    }
+  }
+}
+
+/* Tablet */
+@media only screen and (min-width: 480px) and (max-width: 800px) {
+  .b-top {
+    display: none;
+  }
+
+  .rcolumn {
+    flex-direction: column;
+    div {
+      max-width: 100%;
+    }
+  }
+}
