@@ -1,0 +1,78 @@
+@import '../variables.css';
+
+
+body {
+  color: $white;
+  background-color: $black;
+}
+
+#main-content {grid-area: content;}
+
+.wrapper {
+  min-height: 100vh;
+  min-width: 360px;
+  display: grid;
+  grid-template-areas: 
+    "content";
+  grid-template-rows: auto 1fr auto;
+}
+
+.grid-content {
+  width: 100%;
+  max-width: 100%;
+  margin: 0 auto;
+  padding: 1.3rem;
+  box-sizing: border-box;
+}
+
+h1, h2 {
+  line-height: 1.1;
+  font-weight: 700;
+  /* margin: 2rem 0 .5rem; */
+}
+
+h1{
+  text-transform: uppercase;
+    margin-bottom: 15rem;
+}
+
+h2{margin: 2rem 0 .5rem;}
+
+p {
+  line-height: 1.4;
+  font-weight: 500;
+  margin-bottom: 1.3rem;
+}
+
+@media screen and (max-width: 415px) {
+  body {font-size: 1.3rem;
+  letter-spacing: .02rem;
+}
+}
+
+@media screen and (min-width: 416px){
+  body {font-size: 1.5rem}
+
+  .grid-content {
+    padding: 2rem;
+  }
+
+}
+
+@media screen and (min-width: 416px){
+  body {font-size: 1.4rem}
+  .grid-content {padding: 2rem;}
+}
+
+@media screen and (min-width: 600px){
+  body {font-size: 1.5rem}
+  .grid-content {padding: 4rem;}
+}
+
+@media screen and (min-width: 900px){
+  body {font-size: 2rem}
+  .grid-content {
+    /* padding: 8rem; */
+    max-width: 90%;
+  }
+}

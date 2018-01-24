@@ -1,0 +1,8 @@
+
+.main-content {
+  @import url('https://fonts.googleapis.com/css?family=EB+Garamond:500,500i,600,600i,700|Oswald:400,500,600');
+
+  h1 {font-family: 'Oswald', sans-serif;}
+  h2, p {font-family: 'EB Garamond', serif;}
+
+}
