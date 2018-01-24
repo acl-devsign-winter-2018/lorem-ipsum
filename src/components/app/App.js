@@ -31,6 +31,16 @@ export default class App {
 
   render() {
     const dom = template.clone();   
+
+    // const darkTheme = dom.querySelector('#dark-theme');
+    // const lightTheme = dom.querySelector('#light-theme');
+    // const buttons = dom.querySelector('#theme-buttons');
+
+    // buttons.addEventListener('click', (event) => {
+    //   if(event.target.id === 'dark-theme') {
+
+    //   }
+    // })
     
     dom.querySelector('header').appendChild(new Header().render());
 
