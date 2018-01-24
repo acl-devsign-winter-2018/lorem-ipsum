@@ -28,7 +28,6 @@
 #header {
   grid-area: header;
   padding-bottom: .5rem;
-  /* background-color: $dark-headfoot; */
   width: 100%;
   position: relative;
   display: flex;
@@ -47,8 +46,6 @@
     top: 8.5rem;
     button {
       padding: 5px 20px;
-      /* border: 1px solid $dark-font;
-      background-color: $dark-headfoot; */
       font-weight: bold;
       font-size: 1rem;
     }
@@ -97,7 +94,6 @@
 
 #footer {
   grid-area: footer;
-  /* background-color: $dark-headfoot; */
   text-align: center;
   padding-top: .5rem;
   ul {
