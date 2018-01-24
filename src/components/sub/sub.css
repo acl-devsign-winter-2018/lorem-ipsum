@@ -22,3 +22,17 @@ form {
     border-radius: 0px;
   }
 }
+
+/*  -------- Media Queries ------- */
+
+/* Mobile */
+@media only screen and (min-width: 320px) and (max-width: 580px) {
+  .subWrapper {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .select {
+    margin: 0 0 2rem;
+  }
+}
