@@ -1,1 +1,46 @@
 @import '../variables.css';
+
+.header {
+    grid-area: header;
+}
+
+.content {
+    grid-area: content;
+}
+
+.footer {
+    grid-area: footer;
+}
+
+.wrapper {
+    min-height: 100vh;
+    display: grid;
+    grid-template-areas:
+        "header"
+        "content"
+        "footer";
+    grid-template: auto 1fr auto;
+}
+
+header {
+    padding: 2rem;
+    background-color: $lightgray;
+    color: $accent;
+}
+
+main {
+    padding: 1rem 2rem;
+}
+
+footer {
+    padding: 2rem 2rem 1rem;
+    background-color: $lightgray;
+    a {
+        border-bottom-color: $lightgray;
+    }
+    p {
+        font-weight: 600;
+        font-size: 1.2rem;
+    }
+}
+  

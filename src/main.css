@@ -5,7 +5,7 @@ html {height: 100%;}
 
 body {
   font-family: 'Work Sans', sans-serif;
-  font-weight: 500;
+  font-weight: 400;
   color: $dark;
   min-height: 100%;
 }
@@ -22,6 +22,9 @@ h1, h2, h3, h4 {
   letter-spacing: 2px;
   text-transform: uppercase;
   padding: 0 0 1rem 0;
+  color: $accent;
+  font-weight: 600;
+  font-family: 'Trirong', serif;
 }
 
 h1 {
@@ -35,7 +38,7 @@ h3 {font-size: 1.999em;}
 
 h4 {font-size: 1.414em;}
 
-figcaption, small, .font_small {font-size: 0.8em;}
+figcaption, small, .font_small {font-size: 0.8em; padding: 0 0 2rem; font-weight: 500;}
 
 /* hide screen-reader only text. https://webaim.org/techniques/css/invisiblecontent/ */
 .clip {
@@ -52,15 +55,15 @@ img {
 
 a {
   text-decoration: none;
-  color: $red;
+  color: $link;
   transition: 0.3s ease all;
   padding: 0 0 3px;
-  border-bottom: 3px solid white;
+  border-bottom: 3px solid $white;
 }
 
 a:hover {
-  color: $red;
-  border-bottom: 3px solid $red;
+  color: $link;
+  border-bottom: 3px solid $link;
 }
 
 /*  -------- Media Queries ------- */
@@ -86,7 +89,7 @@ a:hover {
 }
 
 /* Tablet */
-@media only screen and (min-width: 480px) and (max-width: 1200px) {
+@media only screen and (min-width: 480px) and (max-width: 800px) {
   h1 {
       font-size: 2.957em;
   }
