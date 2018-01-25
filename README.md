@@ -5,7 +5,8 @@ You are no doubt familiar with Lorem Ipsum's role as placeholder text. Create an
 
 * History/why we use it
 * How to apply it
-* Allow the user to generate their own
+* Sample Lorem Ipsum text
+* Links to useful resources
 
 Stick to the traditional Lorem Ipsum, not a spinoff variation.
 

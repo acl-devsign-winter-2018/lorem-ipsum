@@ -1,0 +1,83 @@
+@import '../variables.css';
+
+.mainWrapper {
+  max-width: 1200px;
+  margin: 0 auto;
+  div {
+    margin: 1.5rem 0;
+    p{
+      margin: 1rem 0 0;
+    }
+    q {
+      line-height: 1.7;
+    }
+  }
+}
+
+.column {
+  display: flex;
+  div {
+    padding: 0 1.5rem 0 0;
+  }
+}
+
+.q {
+  max-width: 60%;
+  padding: 0 0 0 2rem;
+  border-left: 1rem solid $gray;
+}
+
+.top {
+  margin: 4rem 0 1rem;
+  font-size: 5rem;
+}
+
+.end {
+  margin: 4rem 0;
+}
+
+/* --------- Google Fonts -------- */
+.trirong-work-sans {
+  @import url('https://fonts.googleapis.com/css?family=Work+Sans:400,400i,700|Trirong:700');
+  h1, h2, h3, h4 {font-family: 'Trirong', serif;}
+  p {font-family: 'Work Sans', sans-serif;}
+}
+
+.signika-open-sans {
+  @import url('https://fonts.googleapis.com/css?family=Signika:400,600,700|Open+Sans:400');
+  h1, h2, h3, h4 {font-family: 'Signika', sans-serif;}
+  p {font-family: 'Open Sans', sans-serif;}
+}
+
+.playfair-display-rubik {
+  @import url('https://fonts.googleapis.com/css?family=Playfair+Display:400,400i,700|Rubik:400');
+  h1, h2, h3, h4 {font-family: 'Playfair Display', serif;}
+  p {font-family: 'Rubik', sans-serif;}
+}
+
+.oxygen-source-sans {
+  @import url('https://fonts.googleapis.com/css?family=Oxygen:400,700|Source+Sans+Pro:400');
+  h1, h2, h3, h4 {font-family: 'Oxygen', serif;}
+  p {font-family: 'Source Sans Pro', serif;}
+}
+
+
+/*  -------- Media Queries ------- */
+
+/* Mobile */
+@media only screen and (min-width: 320px) and (max-width: 480px) {
+  .column {
+    flex-direction: column;
+  }
+
+  .q {
+    max-width: 90%;
+  }
+}
+
+/* Tablet */
+@media only screen and (min-width: 480px) and (max-width: 800px) {
+  .column {
+    flex-direction: column;
+  }
+}
