@@ -1,0 +1,27 @@
+@import url('https://fonts.googleapis.com/css?family=EB+Garamond:500,500i,600,600i,700|Oswald:400,500,600');
+
+h1 {font-family: 'Oswald', sans-serif;}
+h2, p {font-family: 'EB Garamond', serif;}
+a {font-family: 'EB Garamond', serif;}
+
+@media screen and (min-width: 900px){
+
+  .grid-wrap{
+    display: grid;
+    grid-template-columns: 2fr 5fr;
+    grid-template-areas:
+    "r c c";
+    align-items: start;
+  }
+
+  .grid-content {
+    grid-area: "c";
+    order: 2;
+  }
+
+  .grid-resources {
+    grid-area: "r";
+    order: 1;
+  }
+}
+
