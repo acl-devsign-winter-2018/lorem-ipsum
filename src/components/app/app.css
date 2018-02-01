@@ -1,42 +1,49 @@
 @import '../variables.css';
 
+body {font-size: $fluidFontSize;}
 
-body {
-  color: $white;
-  background-color: $black;
+#main-content {
+  grid-area: content;
+  background: $lighter;
+  color: $dark;
 }
-
-#main-content {grid-area: content;}
 
 .wrapper {
   min-height: 100vh;
   min-width: 360px;
   display: grid;
   grid-template-areas: 
-    "content";
+  "content"
+  "resources";
   grid-template-rows: auto 1fr auto;
 }
 
-.grid-content {
+.grid-content, .grid-resources {
   width: 100%;
   max-width: 100%;
-  margin: 0 auto;
-  padding: 1.3rem;
+  margin: 0;
+  padding: 1.5rem;
   box-sizing: border-box;
+}
+
+.grid-resources {margin-top: -7rem;}
+
+aside {
+  background: rgb(230,230,230);
+  color: $dark;
+  padding: 1rem;
+  width: 90%;
 }
 
 h1, h2 {
   line-height: 1.1;
   font-weight: 700;
-  /* margin: 2rem 0 .5rem; */
+  margin: 2rem 0 .5rem;
 }
 
-h1{
-  text-transform: uppercase;
-    margin-bottom: 15rem;
-}
+h1 {text-transform: uppercase; margin-bottom: 5rem;}
 
-h2{margin: 2rem 0 .5rem;}
+h2 {margin: 2rem 0 .5rem;}
 
 p {
   line-height: 1.4;
@@ -44,35 +51,56 @@ p {
   margin-bottom: 1.3rem;
 }
 
-@media screen and (max-width: 415px) {
-  body {font-size: 1.3rem;
-  letter-spacing: .02rem;
+a {color: $dark; text-decoration: none;}
+
+li {
+  list-style: none;
+  margin: 2rem 1rem; 
 }
+
+li:hover {color: $light;}
+
+ul {
+  margin: 3rem 0 2rem; 
+  border-top: 1px solid rgb(230,230,230);
 }
+
+ul > h2 {margin: 2rem 0 .5rem;}
+
+a:hover {color: rgb(230,230,230);}
+
+footer {height: 3rem; background: $dark;}
 
 @media screen and (min-width: 416px){
-  body {font-size: 1.5rem}
-
-  .grid-content {
-    padding: 2rem;
-  }
-
-}
-
-@media screen and (min-width: 416px){
-  body {font-size: 1.4rem}
-  .grid-content {padding: 2rem;}
+  
+  .grid-content, .grid-resources {padding: 2rem;}
+  
+  ul {
+    margin: 5rem 0 2rem; 
+    border-top: 1px solid rgb(230,230,230);}
 }
 
 @media screen and (min-width: 600px){
-  body {font-size: 1.5rem}
-  .grid-content {padding: 4rem;}
+  
+  .grid-content, .grid-resources {padding: 4rem;}
+
+  ul {
+    margin: 3rem 0 2rem; 
+    border-top: 1px solid rgb(230,230,230);}
 }
 
 @media screen and (min-width: 900px){
-  body {font-size: 2rem}
-  .grid-content {
-    /* padding: 8rem; */
-    max-width: 90%;
+  
+  .grid-resources{margin-top: 0rem;}
+
+  ul {
+    background: rgb(230,230,230); 
+    margin-top: 9.5rem; 
+    padding: 1rem;
   }
+
+  li {margin: 2rem .2rem; line-height: 1.8rem;}
+  a:hover {color: $light;}
+  ul > h2 {margin: 0 .2rem .5rem;}
 }
+

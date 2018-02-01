@@ -2,14 +2,12 @@ $dark: rgb(50,50,50);
 $light: rgb(200,200,200);
 $lighter: rgb(240,240,240);
 
+$maxWidth: 1200px;
 $contentPadding: .5rem 1rem;
-
-
-$link: rgb(200,200,200);
 
 $minFontVal: 16;
 $maxFontVal: 24;
-$minViewportVal: 375;
+$minViewportVal: 400;
 $maxViewportVal: 1024;
 
 $minFontSize: $(minFontVal)px;
@@ -18,4 +16,3 @@ $minViewportSize: $(minViewportVal)px;
 $maxViewportSize: $(maxViewportVal)px;
 
 $fluidFontSize: calc($minFontSize + ($maxFontVal - $minFontVal) * (100vw - $minViewportSize) / ($maxViewportVal - $minViewportVal));
-
